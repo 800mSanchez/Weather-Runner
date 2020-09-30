@@ -6,11 +6,9 @@ $primary-font: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   width: 80%;
   margin: 0 auto;
   margin-top: 60px;
-
   background: rgba(255, 255, 255, 0.479);
   border: 1px solid black;
   display: flex;
-
   justify-content: space-evenly;
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   box-shadow: 0 9px 13px -6px black;
@@ -22,6 +20,10 @@ $primary-font: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   font-size: 45px;
   font-weight: bolder;
   padding-bottom: 25px;
+  border: black solid 1px;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
 }
 
 .city-box img {
@@ -35,24 +37,29 @@ $primary-font: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
-  border: black solid 1px;
-  border-top: none;
-  border-bottom: none;
-  border-right: none;
+  
 
   h1 {
     font-size: 45px;
   }
 
   p {
-    margin-top: 55px;
+    margin-top: 45px;
     font-size: 25px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .city-box {
       font-size: 30px;
+      border: none;
+    }
+
+    .category-box {
+      border: black solid 1px;
+      border-top: none;
+      border-bottom: none;
+      border-right: none;
     }
 
     .category-box h1 {
@@ -64,3 +71,35 @@ $primary-font: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     }
 }
 
+@media (max-width: 768px) {
+  .weather-box {
+    width: 90%;
+  }
+
+  .city-box {
+    font-size: 15px;
+    border: none;
+    margin-top: 15px;
+  }
+
+  .city-box img {
+    margin-top: 20%;
+    height: 50%;
+    width: 50%;
+  }
+
+  .category-box {
+    border: black solid 1px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+  }
+
+  .category-box h1 {
+    font-size: 15px;
+  }
+
+  .category-box p {
+    font-size: 10px;
+  }
+}

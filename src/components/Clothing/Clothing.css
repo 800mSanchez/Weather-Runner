@@ -1,4 +1,5 @@
 .clothing-box {
+  width: 100%;
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -12,7 +13,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly; }
   .clothes-boxes span {
-    background-color: rgba(255, 255, 255, 0.479);
+    background-color: rgba(255, 255, 255, 0.747);
     width: 30%;
     padding-top: 30px;
     padding-bottom: 20px;
@@ -29,3 +30,43 @@
   .clothes-boxes p {
     margin-left: 15px;
     margin-right: 10px; }
+
+.thunderstorm {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  box-shadow: 0 9px 13px -6px black; }
+  .thunderstorm img {
+    width: 40%; }
+
+.smoke {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  box-shadow: 0 9px 13px -6px black; }
+  .smoke img {
+    width: 30%; }
+
+.tornado {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  box-shadow: 0 9px 13px -6px black; }
+  .tornado img {
+    width: 30%; }
