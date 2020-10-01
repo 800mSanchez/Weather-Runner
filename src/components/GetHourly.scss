@@ -1,17 +1,18 @@
 .hourlycontainer {
     width: 85%;
-    height: 20vh;
     display: flex;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 50px
 }
 
 .hourly {
     width: 13%;
+    height: 250px;
     font-size: 20px;
     margin: 0 auto;
     font-weight: bold;
     padding: .5%;
+    margin-bottom: 50px;
     border-radius: 8%;
     background-color: rgba(255, 255, 255, 0.479);
     box-shadow: 0 9px 13px -6px black;
@@ -31,9 +32,15 @@
     background-color: pink;
 }
 
-@media (max-width: 1300px) {
+
+@media (max-width: 1100px) {
+    .hourlycontainer {
+        width: 90%;
+    }
+
     .hourly {
-        font-size: 19px;
+        font-size: 15px;
+        height: 225px;
         word-wrap: break-word;
     }
 
@@ -42,15 +49,11 @@
     }
 }
 
-
 @media (max-width: 768px) {
-    .hourlycontainer {
-        width: 90%;
-    }
-
     .hourly {
         width: 13%;
         font-size: 13px;
+        height: 225px;
     }
 
     .hourlybtn {
