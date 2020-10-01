@@ -1,10 +1,8 @@
 .loading-logo {
-  width: 400px;
-  height: 400px;
-  display: block;
-  position: fixed;
-  left: 38%;
-  top: 30%;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 450px;
   animation: pulse-black 2s infinite;
   border-radius: 100%; }
 
@@ -33,13 +31,26 @@
      padding: 10%;
      color: white;
  } */
-@media (max-width: 500px) {
+@media (max-height: 1300px) {
+  .loading-logo {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 20%; } }
+
+@media (max-width: 768px) {
   .loading-logo {
     width: 300px;
     height: 300px;
-    margin: 80px;
-    position: relative;
-    left: -5%; }
+    margin: 0 auto;
+    margin-top: 40%; } }
+
+@media (max-width: 500px) {
+  .loading-logo {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 70%; }
   .loadingbtn {
     margin-right: 20px;
     border-color: black;

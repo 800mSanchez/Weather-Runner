@@ -4,6 +4,7 @@ import GetWeather from '../GetWeather/GetWeather';
 import SearchBar from '../SearchBar/SearchBar';
 import GetHourly from '../GetHourly';
 import Clothing from '../Clothing/Clothing';
+import Footer from '../Footer/Footer';
 
 const Weather = () => {
   const [weather, setWeather] = useState([]);
@@ -43,7 +44,8 @@ async function getCoordinates(position) {
      wind: Math.round(api.wind.speed),
      humidity: api.main.humidity,
      error: '',
-   });
+   })
+   ;
 
  })
 //  .then((data) => data);
@@ -54,6 +56,7 @@ if (latitude && longitude) {
     city: '',
     country: '',
     description: '',
+    main: '',
     image: '',
     temperature: '',
     wind: '',
@@ -196,8 +199,9 @@ const splicedHourly = mappedHourly.splice(0, mappedHourly.length - 23)
         <div className="clothing-box">
           <h1>Clothing For Your Run</h1>
           <Clothing temp={weather.temperature} main={weather.main} image={weather.image}/> 
-        </div>  
+        </div> 
 
+        <Footer />
         {/* {mappedHourly} */}
         {/* {splicedHourly[0]}{splicedHourly[1]} {splicedHourly[2]}{splicedHourly[3]}{splicedHourly[4]}{splicedHourly[5]} */}
         </div>

@@ -1,14 +1,21 @@
 .input-boxes {
   display: flex;
+  align-items: baseline;
   justify-content: center; }
 
 input {
   border-radius: 15px;
+  width: 15%;
+  height: 30px;
   text-align: center;
   background: white;
   margin-right: 5px;
   margin-bottom: 25px;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
+
+input:hover {
+  cursor: initial; }
 
 input:focus {
   background: #c5cbe3;
@@ -18,7 +25,36 @@ button {
   border-radius: 15px;
   background-color: white;
   margin-bottom: 30px;
+  width: 6%;
+  height: 50px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-weight: bold; }
+
+button:hover {
+  background: pink;
   cursor: pointer; }
 
-button:focus {
-  background: #c5cbe3; }
+@media (max-width: 1900px) {
+  input {
+    width: 20%; }
+  button {
+    width: 10%; } }
+
+@media (max-width: 1300px) {
+  input {
+    width: 20%; }
+  button {
+    width: 10%; } }
+
+@media (max-width: 768px) {
+  input {
+    width: 20%; }
+  button {
+    width: 10%; } }
+
+@media (max-width: 500px) {
+  input {
+    width: 30%; }
+  button {
+    height: 20%;
+    width: 20%; } }

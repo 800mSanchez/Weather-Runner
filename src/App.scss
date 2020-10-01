@@ -13,6 +13,8 @@ $headerColor: #282c34;
   margin-top: -20px;
 }
 
+
+
 .description {
   display: flex;
   justify-content: center;
@@ -21,18 +23,37 @@ $headerColor: #282c34;
 
 .App {
   text-align: center;
+  height: 100vh;
+}
 
-  // background-image: linear-gradient(rgb(68, 107, 170), white);
-  .App-header {
-    font-size: xx-large;
-    .toggle {
-      display: flex;
-      margin-bottom: -140px;
-    }
+.App-header h1 {
+  font-size: 100px;
+}
+
+.App-header div {
+  display: flex;
+  align-items: baseline;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  p {
+    font-size: 15px;
   }
 }
 
-// .main-title {
-//   margin: 0;
-//   background-color: rgb(68, 107, 170);
-// }
+@media (max-width: 500px) {
+  .App-header h1  {
+    display: inline-block;
+    width: 100%;
+    font-size: 45px;
+  }
+  
+  .toggle-control {
+    display: none;
+  }
+
+  .App-header p {
+    display: none;
+  }
+}

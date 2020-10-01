@@ -24,7 +24,8 @@
     box-shadow: 0 9px 13px -6px black;
     border-radius: 10px;
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-    font-weight: bolder; }
+    font-weight: bolder;
+    font-size: 30px; }
   .clothes-boxes img {
     width: 45%; }
   .clothes-boxes p {
@@ -70,3 +71,23 @@
   box-shadow: 0 9px 13px -6px black; }
   .tornado img {
     width: 30%; }
+
+@media (max-width: 1500px) {
+  .clothes-boxes p {
+    font-size: 25px; } }
+
+@media (max-width: 768px) {
+  .clothes-boxes p {
+    font-size: 20px; } }
+
+@media (max-width: 500px) {
+  .clothing-box h1 {
+    display: inherit;
+    margin-bottom: 25px;
+    font-size: 25px; }
+  .clothes-boxes p {
+    font-size: 13px; }
+  span {
+    padding: 2%; }
+    span img {
+      margin-bottom: 10px; } }

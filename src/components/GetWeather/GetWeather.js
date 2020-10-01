@@ -1,7 +1,7 @@
 import React from 'react';
 import './GetWeather.scss';
 
-const GetWeather = ({ description, city, country, error, temperature, wind, humidity, image, main, name}) => {
+const GetWeather = ({ description, city, country, error, temperature, wind, humidity, image, name}) => {
 
   return (
     <div>

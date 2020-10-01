@@ -15,9 +15,27 @@
   margin-top: -18px; }
 
 .App {
-  text-align: center; }
-  .App .App-header {
-    font-size: xx-large; }
-    .App .App-header .toggle {
-      display: flex;
-      margin-bottom: -140px; }
+  text-align: center;
+  height: 100vh; }
+
+.App-header h1 {
+  font-size: 100px; }
+
+.App-header div {
+  display: flex;
+  align-items: baseline;
+  position: absolute;
+  top: 0;
+  right: 0; }
+  .App-header div p {
+    font-size: 15px; }
+
+@media (max-width: 500px) {
+  .App-header h1 {
+    display: inline-block;
+    width: 100%;
+    font-size: 45px; }
+  .toggle-control {
+    display: none; }
+  .App-header p {
+    display: none; } }

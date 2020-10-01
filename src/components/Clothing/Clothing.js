@@ -7,9 +7,7 @@ function Clothing(props) {
     const image = props.image;
     console.log(props)
     let clothes;
-    if(temp === undefined){
-        clothes = null;
-    } else if(temp > 90 && main === "Clear") {
+    if(temp >= 90 && main === "Clear") {
         return clothes = 
         <div className="clothes-boxes">
             <span>
@@ -22,7 +20,7 @@ function Clothing(props) {
             </span>
             <span>
                 <img src="/icons/tank-top.png" alt="Tank-Top" />
-                <p>On a hot day wearing a tank top can keep you cool while running.</p>
+                <p>On a hot day wearing a tank top will keep you cool.</p>
             </span>
             <span>
                 <img src="/icons/shorts.png" alt="Shorts" />
@@ -37,7 +35,7 @@ function Clothing(props) {
                 <p>Water is a must have on hot days. STAY HYDRATED!</p>
             </span>
         </div>
-    } else if(temp > 90 && main === "Clouds") {
+    } else if(temp >= 90 && main === "Clouds") {
         return clothes = 
         <div className="clothes-boxes">
             <span>
@@ -61,7 +59,7 @@ function Clothing(props) {
                 <p>Water is a must have on hot days. STAY HYDRATED!</p>
             </span>
         </div>
-    } else if(temp > 90 && main === "Rain") {
+    } else if(temp >= 90 && main === "Rain") {
         return clothes = 
         <div>
             <span>
@@ -85,7 +83,7 @@ function Clothing(props) {
                 <p>Even if it is raining, STAY HYDRATED!</p>
             </span>
         </div>
-    } else if(temp > 90 && main === "Drizzle") {
+    } else if(temp >= 90 && main === "Drizzle") {
         return clothes = 
         <div className="clothes-boxes">
             <span>
@@ -109,7 +107,7 @@ function Clothing(props) {
                 <p>Even if it is raining, STAY HYDRATED!</p>
             </span>
         </div>
-    } else if(temp > 90 && main === "Mist") {
+    } else if(temp >= 90 && main === "Mist") {
         return clothes = 
         <div className="clothes-boxes">
             <span>
@@ -133,7 +131,7 @@ function Clothing(props) {
                 <p>Water is a must have on hot days. STAY HYDRATED!</p>
             </span>
         </div> 
-    } else if(temp > 90 && main === "Fog") {
+    } else if(temp >= 90 && main === "Fog") {
         return clothes = 
         <div className="clothes-boxes">
             <span>
@@ -157,7 +155,7 @@ function Clothing(props) {
                 <p>Water is a must have on hot days. STAY HYDRATED!</p>
             </span>
         </div> 
-    } else if(temp > 90 && main === "Haze") {
+    } else if(temp >= 90 && main === "Haze") {
         return clothes = 
         <div className="clothes-boxes">
             <span>
@@ -181,19 +179,19 @@ function Clothing(props) {
                 <p>Water is a must have on hot days. STAY HYDRATED!</p>
             </span>
         </div> 
-    } else if(temp > 90 && main === "Smoke") {
+    } else if(temp >= 90 && main === "Smoke") {
         return clothes = 
         <div className="smoke">
             <img src={`http://openweathermap.org/img/wn/${image}@2x.png`} alt=""/>
             <p>It's looking a little smoky out there!!!</p>
         </div> 
-    } else if(temp > 90 && main === "Thunderstorm" ) {
+    } else if(temp >= 90 && main === "Thunderstorm" ) {
         return clothes =
         <div className="thunderstorm">
             <img src={`http://openweathermap.org/img/wn/${image}@2x.png`} alt=""/>
             <p>Caution thunderstorm in your area!!</p>
         </div>
-    } else if(temp > 90 && main === "Tornado" ) {
+    } else if(temp >= 90 && main === "Tornado" ) {
         return clothes =
         <div className="tornado">
             <img src={`http://openweathermap.org/img/wn/${image}@2x.png`} alt=""/>
@@ -393,7 +391,7 @@ function Clothing(props) {
             <img src={`http://openweathermap.org/img/wn/${image}@2x.png`} alt=""/>
             <p>Tornado warning in your area!!</p>
         </div>
-    } else if(temp <=59 && temp >= 0 && main === "Clear") {
+    } else if(temp <=59 && main === "Clear") {
         return clothes = 
         <div className="clothes-boxes">
             <span>
@@ -421,7 +419,7 @@ function Clothing(props) {
                 <p>Even on cold days its important!! STAY HYDRATED!</p>
             </span>
         </div>
-    } else if(temp <=59 && temp >= 0 && main === "Clouds") {
+    } else if(temp <=59 && main === "Clouds") {
         return clothes = 
         <div className="clothes-boxes">
             <span>
@@ -445,7 +443,7 @@ function Clothing(props) {
                 <p>Even on cold days its important!! STAY HYDRATED!</p>
             </span>
         </div>
-    } else if(temp <=59 && temp >= 0 && main === "Rain") {
+    } else if(temp <=59 && main === "Rain") {
         return clothes = 
         <div className="clothes-boxes">
             <span>
@@ -473,7 +471,7 @@ function Clothing(props) {
                 <p>Even on cold days its important!! STAY HYDRATED!</p>
             </span>
         </div>
-    } else if(temp <=59 && temp >= 0 && main === "Drizzle") {
+    } else if(temp <=59 && main === "Drizzle") {
         return clothes = 
         <div className="clothes-boxes">
             <span>
@@ -501,7 +499,7 @@ function Clothing(props) {
                 <p>Water is a must have even on cold days, STAY HYDRATED!</p>
             </span>
         </div>
-    } else if(temp <=59 && temp >= 0 && main === "Mist") {
+    } else if(temp <=59 && main === "Mist") {
         return clothes = 
         <div className="clothes-boxes">
             <span>
@@ -529,7 +527,7 @@ function Clothing(props) {
                 <p>Water is a must have even on cold days. STAY HYDRATED!</p>
             </span>
         </div> 
-    } else if(temp <=59 && temp >= 0 && main === "Fog") {
+    } else if(temp <=59 && main === "Fog") {
         return clothes = 
         <div className="clothes-boxes">
             <span>
@@ -553,7 +551,7 @@ function Clothing(props) {
                 <p>Water is a must have on even on cold days. STAY HYDRATED!</p>
             </span>
         </div> 
-    } else if(temp <=59 && temp >= 0 && main === "Haze") {
+    } else if(temp <=59 && main === "Haze") {
         return clothes = 
         <div className="clothes-boxes">
             <span>
@@ -577,19 +575,19 @@ function Clothing(props) {
                 <p>Water is a must have even on cold days. STAY HYDRATED!</p>
             </span>
         </div> 
-    } else if(temp <=59 && temp >= 0 && main === "Smoke") {
+    } else if(temp <=59 && main === "Smoke") {
         return clothes = 
         <div className="smoke">
             <img src={`http://openweathermap.org/img/wn/${image}@2x.png`} alt=""/>
             <p>It's looking a little smoky out there!!!</p>
         </div> 
-    } else if(temp <=59 && temp >= 0 && main === "Thunderstorm" ) {
+    } else if(temp <=59 && main === "Thunderstorm" ) {
         return clothes =
         <div className="thunderstorm">
             <img src={`http://openweathermap.org/img/wn/${image}@2x.png`} alt=""/>
             <p>Caution thunderstorm in your area!!</p>
         </div>
-    } else if(temp <=59 && temp >= 0 && main === "Tornado" ) {
+    } else if(temp <=59 && main === "Tornado" ) {
         return clothes =
         <div className="tornado">
             <img src={`http://openweathermap.org/img/wn/${image}@2x.png`} alt=""/>
