@@ -49,6 +49,8 @@
 
     .hourlybtn {
         margin-top: 11%;
+        width: 5%;
+        height: 10%;
     }
 }
 
@@ -70,8 +72,9 @@
 
 @media (max-width: 500px) {
     .hourlycontainer {
-        width: 80%;
-        margin-left: 4%;
+        width: 90%;
+        float: left;
+        margin-left: 3vw;
     }
 
     .hourly {
@@ -80,8 +83,6 @@
         font-size: 4px;
         font-weight: initial;
         word-wrap: break-word;
-        margin-left: 2px;
-        margin-right: 2px;
     }
 
     .hourlybtn {
@@ -89,6 +90,22 @@
         width: 22px;
         font-size: 10px;
         margin-top: 50px;
+    }
+}
+
+@media (max-width: 350px) {
+    .hourlycontainer {
+        width: 80%;
+        float: left;
+        margin-left: 5vw;
+    }
+
+    .hourly {
+        width: 14%;
+        height: 175px;
+        font-size: 4px;
+        font-weight: initial;
+        word-wrap: break-word;
     }
 }
 
