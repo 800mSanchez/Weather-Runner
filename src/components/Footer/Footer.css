@@ -1,6 +1,13 @@
 .footer {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  padding-bottom: 3%; }
 
 a {
-  color: white; }
+  color: white;
+  text-decoration: none;
+  cursor: pointer; }
+
+@media (max-width: 500px) {
+  .footer {
+    padding-bottom: 6%; } }

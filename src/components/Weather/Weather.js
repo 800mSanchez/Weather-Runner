@@ -48,7 +48,6 @@ async function getCoordinates(position) {
    ;
 
  })
-//  .then((data) => data);
 if (latitude && longitude) {
 } else {
   setWeather({
@@ -132,17 +131,6 @@ const splicedHourly = mappedHourly.splice(0, mappedHourly.length - 23)
     searchHourlyApi.hourly)
 })
   }
-// const mappedHourly = hourly.map(hour => {
-//   return <GetHourly
-//   dt={hour.dt * 1000}
-//   temp={hour.temp}
-//   weathermain={hour.weather[0].main}
-//   weatherdescription={hour.weather[0].description}
-//   weathericon={hour.weather[0].icon}
-  // />
-// })
-  // const splicedHourly = mappedHourly.splice(0, mappedHourly.length - 23)
-
 
   const next = () => {
     if(index < 4) {
@@ -159,7 +147,7 @@ const splicedHourly = mappedHourly.splice(0, mappedHourly.length - 23)
     const secondSplicedHourly = splicedHourly.splice(0, 6)
     const thirdSplicedHourly = splicedHourly.splice(0, 6)
     const FourthSplicedHourly = splicedHourly.splice(0, 6)
-    const fsdgs = () => {
+    const displayHourly = () => {
       if(index <= 1) {
         return firstSplicedHourly
       } else if(index <= 2) {
@@ -192,7 +180,7 @@ const splicedHourly = mappedHourly.splice(0, mappedHourly.length - 23)
 
         <div className='hourlycontainer'>
         <button className='hourlybtn' onClick={previous}> &#8592; </button>
-        {fsdgs()}
+        {displayHourly()}
         <button className='hourlybtn' onClick={next}> &#8594; </button>
         </div>
 
@@ -202,11 +190,9 @@ const splicedHourly = mappedHourly.splice(0, mappedHourly.length - 23)
         </div> 
 
         <Footer />
-        {/* {mappedHourly} */}
-        {/* {splicedHourly[0]}{splicedHourly[1]} {splicedHourly[2]}{splicedHourly[3]}{splicedHourly[4]}{splicedHourly[5]} */}
         </div>
         ) : null}
-      {console.log('weather', weather.data)}
+      {/* {console.log('weather', weather.data)} */}
       {/* {console.log('HOURLY', mappedHourly)} */}
     </div>
   );
