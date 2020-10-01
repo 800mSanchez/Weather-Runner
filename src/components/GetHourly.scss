@@ -65,7 +65,7 @@
         font-weight: bolder;
         height: 40px;
         width: 30px;
-        margin-top: 12%;
+        margin-top: 18%;
         font-size: 15px;
     }
 }
@@ -73,12 +73,11 @@
 @media (max-width: 500px) {
     .hourlycontainer {
         width: 90%;
-        float: left;
-        margin-left: 3vw;
+        margin-left: 4.5vw;
     }
 
     .hourly {
-        width: 14%;
+        width: 13%;
         height: 175px;
         font-size: 4px;
         font-weight: initial;
@@ -96,8 +95,6 @@
 @media (max-width: 350px) {
     .hourlycontainer {
         width: 80%;
-        float: left;
-        margin-left: 5vw;
     }
 
     .hourly {
