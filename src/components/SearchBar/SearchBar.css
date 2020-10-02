@@ -44,7 +44,7 @@ button:hover {
   input {
     width: 20%; }
   button {
-    width: 5%; } }
+    width: 10%; } }
 
 @media (max-width: 768px) {
   input {
