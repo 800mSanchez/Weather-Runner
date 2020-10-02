@@ -179,9 +179,9 @@ const splicedHourly = mappedHourly.splice(0, mappedHourly.length - 23)
         />
 
         <div className='hourlycontainer'>
-        <button className='hourlybtn' onClick={previous}> &#8592; </button>
+        <button className='hourlybtn prev' onClick={previous}> &#8592; </button>
         {displayHourly()}
-        <button className='hourlybtn' onClick={next}> &#8594; </button>
+        <button className='hourlybtn next' onClick={next}> &#8594; </button>
         </div>
 
         <div className="clothing-box">
